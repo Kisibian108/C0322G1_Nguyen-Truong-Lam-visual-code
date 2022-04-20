@@ -13,8 +13,19 @@
                 this.height=height;
                 this.width=width;
             }
+
+            getArea(){
+                return this.width * this.height;
+            }
+
+            getPerimeter(){
+                return 2*(this.width + this.height);
+            }
+
         }
-        let myRectangle = new Rectangle(3,5);
+        let myRectangle1 = new Rectangle(3,5);
+        let myRectangle2 = new Rectangle(6,10);
+        console.log(myRectangle1.getArea);
     </script>
 </body>
 </html>
