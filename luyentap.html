@@ -7,6 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    nfjenfoejwnfkoewnfkoewn
+    <script>
+    let person = {
+        name: ['Bob', 'Smith'],
+        age: 32,
+        gender: 'male',
+        interests: ['music', 'skiing'],
+        bio: function() {
+          alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+        },
+        greeting: function() {
+          alert('Hi! I\'m ' + this.name[0] + '.');
+        }
+        
+      };
+      person.age = 45;
+        person['name']['last'] = 'Cratchit';
+        document.write(person['name']['last']);
+        person['eyes'] = 'hazel';
+ person.farewell = function() { alert("Bye everybody!"); }
+ person['eyes']
+ person.farewell()
+
+
+ person[myDataName] = myDataValue;
+ let myDataName = 'height';
+ let myDataValue = '1.75m';
+ person[myDataName] = myDataValue;
+ person.height
+    </script>
 </body>
 </html>
