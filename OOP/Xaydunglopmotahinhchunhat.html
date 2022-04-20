@@ -8,25 +8,34 @@
 </head>
 <body>
     <script>
-        class Rectangle{
-            constructor(height,width){
-                this.height=height;
-                this.width=width;
-            }
-            
-            getArea(){
-                return this.width * this.height;
-            }
-
-            getPerimeter(){
-                return 2*(this.width + this.height);
-            }
-
+         class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
         }
-        let myRectangle1 = new Rectangle(3,5);
-        let myRectangle2 = new Rectangle(6,10);
-        console.log(myRectangle1.getArea);
-        console.log(myRectangle1.getPerimeter);
+
+        setLength(newLength) {
+            this.length = newLength
+        }
+
+        setWidth(newWidth) {
+            this.width = newWidth
+        }
+
+        getAcreage() {
+            return this.length * this.width
+        }
+
+        getPerimeter() {
+            return (this.width + this.length) * 2
+        }
+    }
+
+    let rectangle = new Rectangle(5, 6);
+    rectangle.setLength(4);
+    rectangle.setWidth(6)
+    alert("Diện tích là:" + rectangle.getAcreage());
+    alert("Chu vi là:" + rectangle.getPerimeter());
     </script>
 </body>
 </html>
