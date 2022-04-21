@@ -12,7 +12,7 @@ function Hero(image, top, left, size){
     }
   
     this.moveRight = function(){
-      this.left += 20;
+      this.left += 100;
       console.log('ok: ' + this.left);
     }
   
