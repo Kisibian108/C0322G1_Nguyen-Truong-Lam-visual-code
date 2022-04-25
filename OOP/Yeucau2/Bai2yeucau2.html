@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Nhap vao ky tu bat ky") ;
+        let array1 = ["a","e","o","u","i","A","E","O","U","I"];
+        let i =0;
+        let flag = false;
+        for(i=0;i<array1.length;i++){
+        if(input==array1[i]){
+            flag = true; 
+            break;
+        }        
+        }
+        if(flag==true){
+            document.write("Ky tu nhap vao la nguyen am")
+        } else
+       {
+            document.write("Ky tu nhap vao la phu am")
+        }
+    </script>
+</body>
+</html>
