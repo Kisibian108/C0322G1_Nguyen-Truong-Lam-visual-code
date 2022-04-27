@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open Bai3.html",
+            "file": "/Users/truonglam/Desktop/C0322G1_Nguyen Truong Lam Visual Code/C0322G1_Nguyen-Truong-Lam-visual-code/OOP/Yeucau2/yeuCau4/Bai3.html"
+        }
+    ]
+}

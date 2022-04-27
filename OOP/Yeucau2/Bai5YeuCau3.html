@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         do{
+        let input = parseInt(prompt("Nhap lua chon"))  ;
+          
+        let price = 0;
+        switch(input){
+            case 1: 
+            alert("Gia cafe la 10k") 
+            price = 10;
+            break;
+            case 2: alert("Gia cam vat la 15k")
+            price = 15;
+             break;
+            case 3: alert("Gia nuoc ep la 20k")
+            price = 20
+            break;
+            case 4: alert("Gia nuoc ep la 18k ")
+            price = 18
+            break;
+            case 5: alert("Gia nuoc loc la 5k")
+            price = 5
+            break;
+            case 6: alert("Gia nuoc dua la 20k")
+            price = 20
+            break;
+           
+        }
+        let quantity = parseInt(prompt("Nhap so luong"))
+        alert("tong tien can tra la "+ quantity * price +"k" )
+        
+    } while(input === 7);
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberM = parseInt(prompt("Nhập số hàng"));
+let numberN = parseInt(prompt("Nhập só cột"));
+
+function primeMatrix(num1, num2) {
+    let array2d = [];
+    for (let i = 0; i < num1; i++) {
+        array2d[i] = [];
+        for (let j = 0; j < num2; j++) {
+            array2d[i][j] = parseInt(prompt("Nhập phần tử vào mảng"))
+        }
+    }
+    document.write("Các số nguyên tố có trong mảng: " + '<br>')
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false
+                }
+            }
+            return true
+        }
+    }
+
+    let count = 0;
+    for (let i = 0; i < num1; i++) {
+        for (let j = 0; j < num2; j++) {
+            if (isPrime(array2d[i][j])) {
+                count++
+                document.write(array2d[i][j]);
+
+            }
+        }
+    }
+    document.write("<br>" + "số lượng các số nguyên tố có trong mảng" + count)
+}
+primeMatrix(numberM,numberN)
+
+
+
+    </script>
+</body>
+</html>

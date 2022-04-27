@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberM = parseInt(prompt("Nhập số hàng"));
+        let numberN = parseInt(prompt("Nhập só cột"));
+
+function sum(num1, num2) {
+    let array2d = [];
+    for (let i = 0; i < num1; i++) {
+        array2d[i] = [];
+        for (let j = 0; j < num2; j++) {
+            array2d[i][j] = parseInt(prompt("Nhập phần tử vào mảng"))
+        }
+    }
+    let max = array2d[0][0];
+    let min = array2d[0][0];
+    for (i = 0; i < num1; i++) {
+        for (let j = 0; j < num2; j++) {
+            if (array2d[i][j] > max) {
+                max = array2d[i][j];
+            }
+            if (array2d[i][j] < min) {
+                min = array2d[i][j]
+            }
+        }
+    }
+    document.write("gía trị lớn nhất " + max + "<br>")
+    document.write("gía trị nhỏ nhất " + min + "<br>")
+}
+
+sum(numberM, numberN)
+
+    </script>
+</body>
+</html>
